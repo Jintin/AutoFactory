@@ -5,12 +5,11 @@ import com.squareup.javapoet.JavaFile;
 import com.squareup.javapoet.MethodSpec;
 import com.squareup.javapoet.TypeSpec;
 
+import javax.annotation.processing.Filer;
+import javax.lang.model.element.Modifier;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
-
-import javax.annotation.processing.Filer;
-import javax.lang.model.element.Modifier;
 
 
 public class FactoryBuilder {
