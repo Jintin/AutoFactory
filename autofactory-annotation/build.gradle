@@ -12,8 +12,5 @@ repositories {
 }
 
 dependencies {
-    implementation project(":autofactory-annotation")
-    implementation 'com.google.auto.service:auto-service:1.0-rc5'
-    implementation 'com.squareup:javapoet:1.11.1'
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
