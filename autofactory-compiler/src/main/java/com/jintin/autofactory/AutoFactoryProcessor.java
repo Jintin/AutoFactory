@@ -1,6 +1,5 @@
 package com.jintin.autofactory;
 
-import com.google.auto.service.AutoService;
 import com.squareup.javapoet.ClassName;
 
 import javax.annotation.processing.*;
@@ -13,7 +12,6 @@ import javax.tools.Diagnostic;
 import java.io.IOException;
 import java.util.*;
 
-@AutoService(Processor.class)
 public class AutoFactoryProcessor extends AbstractProcessor {
     private Filer filer;
     private Messager messager;
