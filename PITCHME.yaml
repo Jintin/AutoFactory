@@ -1,0 +1,12 @@
+theme            : template
+
+theme-background : [ "black" ]
+theme-headline   : [ "Raleway", "white", "none" ]
+theme-byline     : [ "Raleway", "#C0C0C0", "none" ]
+theme-text       : [ "Ubuntu", "#F5FFFA", "none" ]
+theme-links      : [ "#E27924", "#FF851B" ]
+theme-code       : [ "Fira Code" ]
+theme-controls   : [ "#C0C0C0" ]
+theme-margins    : [ "0", "15px" ]
+
+highlight        : ir-black
