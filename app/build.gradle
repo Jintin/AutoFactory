@@ -19,8 +19,8 @@ android {
 }
 
 dependencies {
-    api project(':autofactory-annotations')
-    annotationProcessor project(':autofactory-compiler')
+    api project(':annotations')
+    annotationProcessor project(':compiler')
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.2'
     testImplementation 'junit:junit:4.12'

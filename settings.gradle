@@ -1,1 +1,1 @@
-include ':app', ':autofactory-annotations', ':autofactory-compiler'
+include ':app', ':annotations', ':compiler'
