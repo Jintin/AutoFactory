@@ -49,7 +49,7 @@ public class AutoFactoryProcessor extends AbstractProcessor {
             for (TypeMirror typeMirror : list) {
                 ClassName typeName = getName(typeMirror);
                 if (result.containsKey(typeName)) {
-                    result.get(typeName).add(new ElementInfo(autoElement.tag(), className));
+                    result.get(typeName).add(new ElementInfo(autoElement.value(), className));
                     break;
                 }
             }

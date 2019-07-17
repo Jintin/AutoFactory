@@ -2,7 +2,7 @@ package com.jintin.autofactory;
 
 import android.util.Log;
 
-@AutoElement(tag = AnimalTags.DOG)
+@AutoElement(AnimalTags.DOG)
 public class Dog implements Animal {
     @Override
     public void bark() {
