@@ -1,11 +1,9 @@
 package com.jintin.autofactory;
 
-import android.util.Log;
-
 @AutoElement(AnimalTags.DOG)
 public class Dog implements Animal {
     @Override
-    public void bark() {
-        Log.e("jintin", "woo");
+    public String bark() {
+        return "woo";
     }
 }
