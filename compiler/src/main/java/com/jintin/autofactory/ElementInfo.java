@@ -2,11 +2,11 @@ package com.jintin.autofactory;
 
 import com.squareup.javapoet.ClassName;
 
-public class ElementInfo {
-    public String tag;
-    public ClassName className;
+class ElementInfo {
+    String tag;
+    ClassName className;
 
-    public ElementInfo(String tag, ClassName className) {
+    ElementInfo(String tag, ClassName className) {
         this.tag = tag;
         this.className = className;
     }

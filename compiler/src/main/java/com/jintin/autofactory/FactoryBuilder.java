@@ -5,23 +5,24 @@ import com.squareup.javapoet.JavaFile;
 import com.squareup.javapoet.MethodSpec;
 import com.squareup.javapoet.TypeSpec;
 
-import javax.annotation.processing.Filer;
-import javax.lang.model.element.Modifier;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
+import javax.annotation.processing.Filer;
+import javax.lang.model.element.Modifier;
 
-public class FactoryBuilder {
+
+class FactoryBuilder {
     private Filer filer;
     private Map<ClassName, List<ElementInfo>> input;
 
-    public FactoryBuilder(Filer filer, Map<ClassName, List<ElementInfo>> input) {
+    FactoryBuilder(Filer filer, Map<ClassName, List<ElementInfo>> input) {
         this.filer = filer;
         this.input = input;
     }
 
-    public void generate() throws IOException {
+    void generate() throws IOException {
         for (ClassName key : input.keySet()) {
             MethodSpec.Builder methodBuilder = MethodSpec.methodBuilder("create" + key.simpleName())
                     .addModifiers(Modifier.PUBLIC, Modifier.STATIC)
